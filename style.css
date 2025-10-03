@@ -1,0 +1,271 @@
+#top-menu {
+  width: 720px;
+  max-width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1100;
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 12px;
+  margin: 24px;
+}
+
+#top-menu ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 56px;
+}
+
+#top-menu ul li {
+  margin: 0 16px;
+}
+
+#top-menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+#top-menu ul li a:hover {
+  background: rgba(255,255,255,0.10);
+  color: #d5d8ff;
+}
+
+body{
+    /* --- Propiedades para la imagen de fondo --- */
+            /* ¡IMPORTANTE! Reemplaza 'ruta/a/tu/imagen.jpg' con la ruta real de tu archivo de imagen */
+            background-image: url(img/Día.png);
+            background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el área, manteniendo la relación de aspecto */
+            background-position: center center; /* Centra la imagen en el fondo */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            background-attachment: fixed; /* Hace que la imagen de fondo sea fija (NO se desplaza con el contenido) */
+            /* ------------------------------------------- */
+            font-family: 'Roboto', Arial, sans-serif;
+}
+
+body.modo-noche {
+  background-image: url('img/noche.png');
+  filter: none;
+}
+
+#particles-js {
+            /* Posiciona el contenedor para que ocupe toda la pantalla, independientemente del scroll */
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            /* Coloca las partículas entre el fondo del body y el contenido (z-index: 0) */
+            /* Es transparente por defecto, así que no necesita un background-color. */
+            z-index: 0;
+        }
+
+#side-menu{
+    display: inline-flex;
+    height: 708px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    border-radius: 12px;
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    padding: 12px;
+}
+
+#side-menu {
+    /* Posicionamiento: Fijo y pegado a la izquierda */
+    position: fixed;
+    z-index: 1000;
+    top: 50%;
+    left: 24px;
+    transform: translateY(-50%);
+}
+
+.icono-logo{
+  display: flex;
+  padding: 0 12px 0 0;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: center;
+}
+
+.icono-día-noche {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: center;
+  margin-bottom: 0;
+  padding-right: 12px;
+}
+
+#side-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#side-menu ul li a {
+    text-decoration: none;   /* quita subrayado */
+    color: white;
+    display: flex;
+    padding: 6px 12px;
+    align-items: center;
+    gap: 6px;
+    align-self: stretch;
+}
+
+
+#side-menu ul li a:hover {
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(2px);
+     /* Efecto de indentación al pasar el mouse */
+}
+
+/* Estilos para el contenedor principal */
+#main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  position: relative;
+  z-index: 1;
+  font-family: 'Roboto', Arial, sans-serif;
+  pointer-events: none;
+}
+
+.info-texto {
+  color: #fff;
+  max-width: 500px;
+  margin-right: 48px;
+  font-family: 'Roboto', Arial, sans-serif;
+  pointer-events: none;
+}
+
+.info-texto h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 24px;
+  line-height: 1.1;
+}
+
+.info-texto p {
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.formulario-contacto {
+  background: rgba(24, 36, 24, 0.55);
+  backdrop-filter: blur(8px);
+  border-radius: 18px;
+  padding: 36px 32px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  min-width: 340px;
+  max-width: 380px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-family: 'Roboto', Arial, sans-serif;
+  pointer-events: auto;
+}
+
+.formulario-contacto h2 {
+  margin-bottom: 18px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.formulario-contacto label {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  font-weight: 500;
+  display: block;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: none;
+  margin-bottom: 12px;
+  font-size: 1rem;
+  font-family: inherit;
+  background: rgba(255,255,255,0.12);
+  color: #fff;
+  outline: none;
+  resize: none;
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
+  background: rgba(255,255,255,0.18);
+  box-shadow: 0 0 0 2px #4e8cff44;
+}
+
+.formulario-contacto button {
+  background: #3d4fff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  width: 100%;
+  font-size: 16px; /* Cambia este valor al tamaño que prefieras */
+}
+
+.icono-boton {
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+}
+
+.formulario-contacto button:hover {
+  background: #2a36b8;
+}
+
+@media (max-width: 900px) {
+  #main-content {
+    flex-direction: column;
+    padding: 32px 0;
+  }
+  .info-texto {
+    margin-right: 0;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+  .formulario-contacto {
+    margin: 0 auto;
+  }
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #b8b8b8; /* Cambia este valor por el color que prefieras */
+  opacity: 1;  /* Opcional: asegura que el color se vea bien */
+}

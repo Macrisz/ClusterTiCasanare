@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClusterTiCasanare</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Para interacción con partículas, se debe hacer desde JavaScript -->
+</head>
+
+<body>
+    <!-- Menú Superior Horizontal -->
+    <nav id="top-menu">
+        <div class="icono-logo"> <img src="img/icon-logo.svg" alt=""></div>
+        <div class="icono-día-noche">
+            <img id="icono-dia-top" src="img/Icon-día.svg" alt="Día" style="cursor:pointer;">
+            <img id="icono-noche-top" src="img/Icon-noche.svg" alt="Noche" style="display:none;cursor:pointer;">
+        </div>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    <div id="particles-js"></div>
+
+    <!-- Menú Lateral Fijo -->
+    <!-- <nav id="side-menu">
+        <div class="icono-logo"> <img src="img/icon-logo.svg" alt=""></div>
+        <div class="icono-día-noche">
+            <img id="icono-dia" src="img/Icon-día.svg" alt="Día" style="cursor:pointer;">
+            <img id="icono-noche" src="img/Icon-noche.svg" alt="Noche" style="display:none;cursor:pointer;">
+        </div>
+        <ul>
+            <li><a href="#inicio" class="active">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav> -->
+    
+    <main id="main-content">
+        <section class="info-texto">
+            <h1>Casanare: <br>Conectando Talento e Innovación.</h1>
+            <p>Fomentamos el desarrollo al unir empresas, fortalecer la producción local y promover a nuestros expertos
+                en
+                tecnología. Convertimos la innovación casanareña en un modelo a seguir.</p>
+        </section>
+        <section class="formulario-contacto">
+            <h2>Contacto</h2>
+            <form>
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos sobre tu proyecto o consulta..."
+                    required></textarea>
+                <button type="submit">
+                    Enviar mensaje
+                    <span class="icono-boton">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"   stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-send">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M10 14l11 -11" />
+                            <path d="M21 3l-6.5 18a.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5" />
+                        </svg>
+                            <path d="M5 10h10M10 5l5 5-5 5" stroke="white" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                </button>
+            </form>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="javascritp.js"></script>
+</body>
+
+</html>
