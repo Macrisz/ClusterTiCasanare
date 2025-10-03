@@ -269,3 +269,13 @@ textarea::placeholder {
   color: #b8b8b8; /* Cambia este valor por el color que prefieras */
   opacity: 1;  /* Opcional: asegura que el color se vea bien */
 }
+
+.footer {
+    width: 100%;
+    background: rgba(24, 36, 24, 0.55);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+}
